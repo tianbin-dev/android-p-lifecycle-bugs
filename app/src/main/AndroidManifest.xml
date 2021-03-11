@@ -20,7 +20,8 @@
 
         <activity
             android:name=".SecondActivity"
-            android:label="SecondActivity"/>
+            android:label="SecondActivity"
+            android:theme="@style/DialogAppTheme"/>
 
         <activity
             android:name=".ThirdActivity"

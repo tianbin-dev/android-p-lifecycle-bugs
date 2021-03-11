@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("MainActivity", "onCreate()")
+        Log.d("tianbin", javaClass.simpleName + "==>onCreate()")
 
         setContentView(R.layout.activity_main)
         button_main.setOnClickListener {
@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        Log.d("MainActivity", "onResume()")
+        Log.d("tianbin", javaClass.simpleName + "==>onResume()")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("tianbin", javaClass.simpleName + "==>onPause()")
     }
 }
